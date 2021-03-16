@@ -1,0 +1,1 @@
+When installing ubuntu, don't choose `install drivers for graphics`.
