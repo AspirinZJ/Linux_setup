@@ -10,12 +10,13 @@ sudo apt install vlc texlive-full texstudio -y
 # install typora
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
 sudo add-apt-repository 'deb https://typora.io/linux ./'
-sudo aptupdate
+sudo apt update
 # install typora
 sudo apt install typora -y
 
 cd resources/typora_themes/
 unzip panda.zip
+mkdir -p ~/.config/Typora/themes
 mv panda panda.css ~/.config/Typora/themes/
 cd ../..
 

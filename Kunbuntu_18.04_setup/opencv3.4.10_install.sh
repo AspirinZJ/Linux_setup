@@ -71,12 +71,12 @@ read -p "Accept? y/n" accept
 mkdir build && cd build
 # in case of error: calling a constexpr __host__ function("abs") from a __device__ function("abs") is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
 # add -D CUDA_NVCC_FLAGS=--expt-relaxed-constexpr flag
+# -D WITH_GSTREAMER=ON -D WITH_LIBV4L=ON \
 cmake 	-D CMAKE_BUILD_TYPE=RELEASE \
 		-D CMAKE_INSTALL_PREFIX=/usr/local \
 		-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.4.10/modules \
 		-D WITH_CUDA=ON -D WITH_CUBLAS=ON -D WITH_TBB=ON \
 		-D ENABLE_FAST_MATH=ON -D CUDA_FAST_MATH=ON \
-		-D WITH_GSTREAMER=OFF -D WITH_LIBV4L=ON \
 		-D EIGEN_INCLUDE_PATH=/usr/include/eigen3 \
 		-D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D BUILD_EXAMPLES=ON \
 		-D BUILD_opencv_python2=OFF -D BUILD_opencv_python3=ON \
