@@ -8,15 +8,15 @@ cp ./resources/.face ~/
 
 sudo apt update
 sudo apt upgrade -y
-sudo apt install git cmake gcc g++ vim -y
+sudo apt install git cmake gcc g++ vim build-essential -y
+sudo apt install clang -y
 sudo apt install vlc -y
 
 sudo snap install clion --classic
 sudo snap install pycharm-professional --classic
 sudo snap install intellij-idea-ultimate --classic
 
-sudo apt install texlive-full -y
-sudo apt install texstudio -y
+
 
 # install typora
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
@@ -33,15 +33,18 @@ sudo apt install sublime-text -y
 
 sudo apt install htop guake -y
 
-sudo apt remove orage xfce4-dict xfce4-mailwatch-plugin xfce4-weather-plugin
+sudo apt remove orage xfce4-dict -y
 sudo apt remove xfburn parole -y
 sudo apt update && sudo apt autoremove -y
 sudo apt remove mate-calc* mousepad -y
 sudo apt update && sudo apt autoremove -y
-sudo apt remove onboard* pidgin* thunderbird*
+sudo apt remove onboard* pidgin* thunderbird* -y
 sudo apt update && sudo apt autoremove -y
-sudo apt remove sgt-* gnome-mines gnome-sudoku
+sudo apt remove sgt-* gnome-mines gnome-sudoku -y
 sudo apt update && sudo apt autoremove -y
+
+sudo apt install meld -y
+sudo apt install python3-pip -y
 
 # change folder name
 rm ~/.config/user-dirs.dirs 

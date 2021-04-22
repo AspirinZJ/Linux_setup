@@ -39,5 +39,10 @@ sudo cp wallpaper.png /usr/share/plymouth/themes/xubuntu-logo/
 sudo mv /usr/share/plymouth/themes/xubuntu-logo/logo.png /usr/share/plymouth/themes/xubuntu-logo/logo.png.bak
 sudo cp logo.png /usr/share/plymouth/themes/xubuntu-logo/
 
+echo "Changing headshot..."
+cd ..
+cp .face ~/
+echo "Finished changing headshot"
+
 echo "Finished installing themes."
 
