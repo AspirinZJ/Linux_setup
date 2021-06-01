@@ -13,6 +13,7 @@ sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt update
 # install typora
 sudo apt install typora -y
+sudo apt install remmina -y
 
 cd resources/typora_themes/
 unzip panda.zip

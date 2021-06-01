@@ -11,6 +11,7 @@ sudo apt upgrade -y
 sudo apt install git cmake gcc g++ vim build-essential -y
 sudo apt install clang -y
 sudo apt install vlc -y
+sudo apt install remmina -y
 
 sudo snap install clion --classic
 sudo snap install pycharm-professional --classic

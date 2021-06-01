@@ -16,14 +16,17 @@ sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev -y
 sudo apt install libxvidcore-dev x264 libx264-dev libfaac-dev libmp3lame-dev libtheora-dev libvorbis-dev ffmpeg -y
 
 # Cameras programming interface libs
-sudo apt install libv4l-dev v4l-utils qv4l2 v4l2ucp libxine2-dev -y
+sudo apt install libv4l-dev v4l-utils qv4l2 libxine2-dev -y
+# sudo apt install v4l2ucp -y
 sudo apt install libdc1394-22 libdc1394-22-dev -y
 
 # GTK lib for the graphical user functionalites coming from OpenCV highghui module
 sudo apt install libgtk-3-dev -y
 
 # Python libraries for python2 and python3
-sudo apt install python-dev python-numpy python3-numpy libpython2.7-dev libpython3.6-dev python-pip python3-pip  python3-dev -y
+sudo apt install python-dev python-numpy python3-numpy libpython2.7-dev libpython3.9-dev python3-pip  python3-dev -y
+# sudo apt install python-pip -y
+
 
 # Parallelism library C++ for CPU
 sudo apt install libtbb2 libtbb-dev -y
