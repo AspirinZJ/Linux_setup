@@ -19,7 +19,10 @@ sudo prime-select nvidia
 sudo apt install nvidia-cuda-toolkit -y
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Add the following two lines to ~/.bashrc"
-echo "export PATH=/usr/lib/cuda/bin${PATH:+:${PATH}}"
-echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+cp ~/.bashrc ~/.bashrc.bak
+echo ""
+echo "export PATH=/usr/lib/cuda/bin${PATH:+:${PATH}}" >> ~/.bashrc
+echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> ~/.bashrc
+echo "" >> ~/.bashrc
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "~~~Reboot the system to enable nvidia driver and cuda installation~~~~"

@@ -8,6 +8,7 @@ remove Control = Control_L
 keysym Caps_Lock = Control_L
 add Control = Control_L" > ~/.xmodmaprc
 
+mkdir -p ~/.local/bin
 touch ~/.local/bin/change_capsLock_to_ctrl
 chmod +x ~/.local/bin/change_capsLock_to_ctrl
 

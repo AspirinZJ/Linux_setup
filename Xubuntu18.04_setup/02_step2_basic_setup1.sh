@@ -95,9 +95,8 @@ fi
 git config --global user.name "AspirinZJ"
 git config --global user.email "zhangmengwei1996@outlook.com"
 
-ssh-keygen -t rsa
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "Paste the following key to github"
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-
-cat ~/.ssh/id_rsa.pub
+# ssh-keygen -t rsa
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+# echo "Paste the following key to github"
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+# cat ~/.ssh/id_rsa.pub
