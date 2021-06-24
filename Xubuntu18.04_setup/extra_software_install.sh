@@ -10,3 +10,6 @@ sudo apt install texstudio -y
 sudo apt install guvcview -y
 sudo apt install okular -y
 sudo apt install translate-shell -y
+
+# qmmp is a lightweight music gui player
+sudo apt install qmmp -y
