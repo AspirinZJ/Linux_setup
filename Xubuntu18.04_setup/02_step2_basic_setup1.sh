@@ -3,13 +3,14 @@
 set -e
 
 cat ./resources/my_bash_header >> ~/.bashrc
+echo "" >> ~/.bashrc
 
 cp ./resources/.face ~/
 
 sudo apt update
 sudo apt upgrade -y
-sudo apt install git cmake gcc g++ vim build-essential -y
-sudo apt install clang -y
+sudo apt install git cmake gcc g++ vim build-essential llvm -y
+sudo apt install clang clang-format -y
 sudo apt install vlc -y
 sudo apt install remmina -y
 
