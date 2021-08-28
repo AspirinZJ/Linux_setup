@@ -6,14 +6,10 @@ set -e
 sudo apt install texlive-full -y
 sudo apt install texstudio -y
 
-# install guvcview for controlling camera and seeing the detials of the camera
-sudo apt install guvcview -y
-sudo apt install okular -y
-sudo apt install translate-shell -y
-
 # qmmp is a lightweight music gui player
 sudo apt install qmmp -y
 
+# install guvcview for controlling camera and seeing the detials of the camera
 # guvcview is a gui tool for getting and setting the parameters of the camera
 sudo apt install guvcview -y
 
@@ -25,3 +21,6 @@ sudo apt install gsmartcontrol -y
 
 # translation in shell
 sudo apt install translate-shell -y
+
+# color pickup on screen
+sudo snap install pick-colour-picker -y
