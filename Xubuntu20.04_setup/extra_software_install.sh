@@ -24,3 +24,9 @@ sudo apt install translate-shell -y
 
 # color pickup on screen
 sudo snap install pick-colour-picker -y
+
+# howdy captures the image and use it to detect user and input it as sudo password
+sudo add-apt-repository ppa:boltgolt/howdy
+sudo apt update
+sudo apt install howdy
+

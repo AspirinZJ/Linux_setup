@@ -44,6 +44,7 @@ sudo apt update && sudo apt autoremove -y
 sudo apt remove onboard* pidgin* thunderbird* -y
 sudo apt update && sudo apt autoremove -y
 sudo apt remove sgt-* gnome-mines gnome-sudoku -y
+sudo apt remove gucharmap simple-scan -y
 sudo apt update && sudo apt autoremove -y
 
 sudo apt install meld -y
