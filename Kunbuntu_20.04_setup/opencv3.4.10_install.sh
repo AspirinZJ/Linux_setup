@@ -24,7 +24,7 @@ sudo apt install libdc1394-22 libdc1394-22-dev -y
 sudo apt install libgtk-3-dev -y
 
 # Python libraries for python2 and python3
-sudo apt install python-dev python-numpy python3-numpy libpython2.7-dev libpython3.6-dev python3-pip  python3-dev -y
+sudo apt install python-dev python-numpy python3-numpy libpython2.7-dev libpython3.9-dev python3-pip  python3-dev -y
 # sudo apt install python-pip -y
 
 

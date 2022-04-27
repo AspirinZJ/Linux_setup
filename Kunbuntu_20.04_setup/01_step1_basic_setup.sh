@@ -2,10 +2,15 @@
 
 set -e
 
+cat ./resources/my_bash_header >> ~/.bashrc
+echo "" >> ~/.bashrc
+
 sudo apt update
 sudo apt upgrade -y
-sudo apt install vim git gcc g++ cmake build-essential libpython2.7-dev libpython3.6-dev python-pip python3-pip htop guake -y
-sudo apt install vlc texlive-full texstudio -y
+sudo apt install vim git gcc g++ cmake build-essential htop guake -y
+sudo apt install llvm clang clang-format -y
+sudo apt install vlc -y
+sudo apt install translate-shell -y
 
 # tree is a file tree app
 sudo apt install tree -y
@@ -16,6 +21,7 @@ sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt update
 # install typora
 sudo apt install typora -y
+
 sudo apt install remmina -y
 
 cd resources/typora_themes/
@@ -28,10 +34,8 @@ sudo snap install clion --classic
 sudo snap install pycharm-professional --classic
 sudo snap install intellij-idea-ultimate --classic
 
-sudo apt remove kaddressbook kmail kontact korganizer ktnef -y
-sudo apt remove k3b k3b-data k3b-i18n kate kate5-data kcalc -y
-sudo apt remove akregator konversation konversation-data skanlite -y
-sudo apt remove kleopatra kwalletmanager -y
+sudo apt remove kmahjongg k3b-i18n k3b kate kate5-data kcalc -y
+sudo apt remove konversation konversation-data skanlite  kwalletmanager -y
 
 sudo apt install openjdk-11-jdk -y
 
@@ -43,7 +47,3 @@ sudo apt update && sudo apt install sublime-text -y
 
 git config --global user.name "AspirinZJ"
 git config --global user.email "zhangmengwei1996@outlook.com"
-ssh-keygen -t rsa
-echo "~~~~~~~Paste the following key to github~~~~~~~~~~~"
-cat ~/.ssh/id_rsa.pub
-
