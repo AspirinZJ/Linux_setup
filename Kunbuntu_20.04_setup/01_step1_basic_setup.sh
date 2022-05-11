@@ -4,6 +4,7 @@ set -e
 
 cat ./resources/my_bash_header >> ~/.bashrc
 echo "" >> ~/.bashrc
+cp ./resources/.face ~/
 
 sudo apt update
 sudo apt upgrade -y
@@ -18,18 +19,16 @@ sudo apt install tree -y
 # install typora
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
 sudo add-apt-repository 'deb https://typora.io/linux ./'
-sudo apt update
-# install typora
-sudo apt install typora -y
+sudo apt update && sudo apt install typora -y
 
-sudo apt install remmina -y
-
+# install Typora Themes
 cd resources/typora_themes/
 unzip panda.zip
 mkdir -p ~/.config/Typora/themes
 mv panda panda.css ~/.config/Typora/themes/
 cd ../..
 
+# install Jetbrains Apps
 sudo snap install clion --classic
 sudo snap install pycharm-professional --classic
 sudo snap install intellij-idea-ultimate --classic
@@ -37,7 +36,6 @@ sudo snap install intellij-idea-ultimate --classic
 sudo apt remove kmahjongg k3b-i18n k3b kate kate5-data kcalc -y
 sudo apt remove konversation konversation-data skanlite  kwalletmanager -y
 
-sudo apt install openjdk-11-jdk -y
 
 # install sublime-text
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
