@@ -33,3 +33,6 @@ sudo apt install openjdk-11-jdk -y
 
 # meld is a software comparing files
 sudo apt install meld -y
+
+# system backup
+sudo apt install timeshift -y

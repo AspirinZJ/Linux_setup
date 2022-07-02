@@ -13,6 +13,9 @@ sudo apt install llvm clang clang-format -y
 sudo apt install vlc -y
 sudo apt install translate-shell -y
 
+# fetch system info
+sudo apt install screenfetch neofetch -y
+
 # tree is a file tree app
 sudo apt install tree -y
 
@@ -45,3 +48,14 @@ sudo apt update && sudo apt install sublime-text -y
 
 git config --global user.name "AspirinZJ"
 git config --global user.email "zhangmengwei1996@outlook.com"
+
+# remove redundant apps
+sudo apt remove kmines kpat ksudoku -y
+sudo apt update && sudo apt autoremove
+sudo apt remove thunderbird -y
+
+# Argcomplete provides easy, extensible command line tab completion of arguments for your Python script.
+# It makes two assumptions:
+# 1. You’re using bash as your shell (limited support for zsh, fish, and tcsh is available)
+# 2. You’re using argparse to manage your command line arguments/options
+sudo apt install python3-argcomplete -y

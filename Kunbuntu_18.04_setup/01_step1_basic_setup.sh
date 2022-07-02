@@ -47,3 +47,10 @@ ssh-keygen -t rsa
 echo "~~~~~~~Paste the following key to github~~~~~~~~~~~"
 cat ~/.ssh/id_rsa.pub
 
+
+
+# Argcomplete provides easy, extensible command line tab completion of arguments for your Python script.
+# It makes two assumptions:
+# 1. You’re using bash as your shell (limited support for zsh, fish, and tcsh is available)
+# 2. You’re using argparse to manage your command line arguments/options
+sudo apt install python3-argcomplete -y
