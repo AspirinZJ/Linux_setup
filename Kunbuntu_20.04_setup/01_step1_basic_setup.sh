@@ -13,6 +13,9 @@ sudo apt install llvm clang clang-format -y
 sudo apt install vlc -y
 sudo apt install translate-shell -y
 
+# meld is for comparing the difference of two files
+sudo apt install meld -y
+
 # fetch system info
 sudo apt install screenfetch neofetch -y
 

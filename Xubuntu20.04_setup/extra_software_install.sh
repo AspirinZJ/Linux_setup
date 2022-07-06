@@ -30,3 +30,7 @@ sudo add-apt-repository ppa:boltgolt/howdy
 sudo apt update
 sudo apt install howdy
 
+# cpu-x is a tool for showing computer hardware details
+sudo add-apt-repository ppa:flexiondotorg/cpu-x
+sudo apt-get update
+sudo apt-get install cpu-x
