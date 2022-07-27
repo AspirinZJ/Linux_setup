@@ -5,8 +5,6 @@ set -e
 cat ./resources/my_bash_header >> ~/.bashrc
 echo "" >> ~/.bashrc
 
-cp ./resources/.face ~/
-
 sudo apt update
 sudo apt upgrade -y
 sudo apt install translate-shell -y
@@ -14,7 +12,7 @@ sudo apt install git cmake gcc g++ vim build-essential llvm -y
 sudo apt install clang clang-format -y
 sudo apt install vlc -y
 sudo apt install remmina -y
-sudo apt install screenfetch -y
+sudo apt install screenfetch neofetch -y
 
 # tree is a file tree app
 sudo apt install tree -y
