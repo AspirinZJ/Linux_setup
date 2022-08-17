@@ -34,3 +34,6 @@ sudo apt install howdy
 sudo add-apt-repository ppa:flexiondotorg/cpu-x
 sudo apt-get update
 sudo apt-get install cpu-x
+
+# disk usage analyzer
+sudo apt install baobab -y

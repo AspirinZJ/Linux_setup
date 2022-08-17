@@ -22,6 +22,9 @@ sudo apt install screenfetch neofetch -y
 # tree is a file tree app
 sudo apt install tree -y
 
+# system backup
+sudo apt install timeshift -y
+
 # install typora
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
 sudo add-apt-repository 'deb https://typora.io/linux ./'
@@ -55,7 +58,7 @@ git config --global user.email "zhangmengwei1996@outlook.com"
 # remove redundant apps
 sudo apt remove kmines kpat ksudoku -y
 sudo apt update && sudo apt autoremove
-sudo apt remove thunderbird -y
+sudo apt remove thunderbird* -y
 
 # Argcomplete provides easy, extensible command line tab completion of arguments for your Python script.
 # It makes two assumptions:

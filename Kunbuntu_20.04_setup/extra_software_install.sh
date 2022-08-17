@@ -34,10 +34,11 @@ sudo apt install openjdk-11-jdk -y
 # meld is a software comparing files
 sudo apt install meld -y
 
-# system backup
-sudo apt install timeshift -y
 
 # cpu-x is a tool for showing computer hardware details
 sudo add-apt-repository ppa:flexiondotorg/cpu-x
 sudo apt-get update
 sudo apt-get install cpu-x
+
+# disk usage analyzer
+sudo apt install baobab -y
