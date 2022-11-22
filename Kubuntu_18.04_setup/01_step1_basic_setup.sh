@@ -35,12 +35,14 @@ sudo apt remove kleopatra kwalletmanager -y
 
 sudo apt install openjdk-11-jdk -y
 
+
 # install sublime-text
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt install apt-transport-https -y
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt update && sudo apt install sublime-text -y
 
+
+# git config
 git config --global user.name "AspirinZJ"
 git config --global user.email "zhangmengwei1996@outlook.com"
 ssh-keygen -t rsa
