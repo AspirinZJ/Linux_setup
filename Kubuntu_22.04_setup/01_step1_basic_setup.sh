@@ -11,6 +11,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install vim git gcc g++ cmake build-essential htop guake -y
 sudo apt install llvm clang clang-format -y
+sudo apt install python3-pip -y
 sudo apt install vlc ffmpeg mpv libmpv-dev -y
 sudo apt install translate-shell -y
 sudo apt install gimp -y

@@ -54,3 +54,21 @@ sudo apt install guvcview -y
 
 # kdenlive is a media edit software
 sudo apt install kdenlive -y
+
+# ag：比grep、ack更快的递归搜索文件内容。
+# usage: ag 'def main'
+sudo apt install silversearcher-ag -y
+
+# tig：字符模式下交互查看git项目，可以替代git命令。
+sudo apt install tig -y
+
+# shellcheck：shell脚本静态检查工具，能够识别语法错误以及不规范的写法。
+sudo apt install shellcheck -y
+
+# fzf：命令行下模糊搜索工具，能够交互式智能搜索并选取文件或者内容，配合终端ctrl-r历史命令搜索简直完美。
+sudo apt install fzf -y
+
+# axel：多线程下载工具，下载文件时可以替代curl、wget。
+# axel -n 20 http://centos.ustc.edu.cn/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso
+sudo apt install axel -y
+
