@@ -15,7 +15,7 @@ sudo apt install python3-pip -y
 sudo apt install vlc ffmpeg mpv libmpv-dev -y
 sudo apt install translate-shell -y
 sudo apt install gimp -y
-sudo apt install filezilla -y
+sudo apt install rar unrar filezilla -y
 sudo apt install aria2 uget -y
 sudo apt install gparted -y
 
@@ -74,4 +74,4 @@ sudo apt install python3-argcomplete -y
 # git config
 git config --global user.name "AspirinZJ"
 git config --global user.email "zhangmengwei1996@outlook.com"
-
+git config --global core.quotepath false # git终端显示中文而不是quote的path
