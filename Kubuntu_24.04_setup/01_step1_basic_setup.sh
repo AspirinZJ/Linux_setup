@@ -13,7 +13,6 @@ sudo apt install vim git gcc g++ cmake build-essential htop guake -y
 sudo apt install llvm clang clang-format -y
 sudo apt install python3-pip -y
 sudo apt install vlc ffmpeg mpv libmpv-dev -y
-sudo apt install translate-shell -y
 sudo apt install gimp -y
 sudo apt install rar unrar filezilla -y
 sudo apt install aria2 uget -y
@@ -35,10 +34,8 @@ sudo apt install timeshift -y
 # or run:
 # sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
 wget -qO - https://typora.io/linux/public-key.asc | sudo tee /etc/apt/trusted.gpg.d/typora.asc
-# add Typora's repository
 sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt-get update
-# install typora
 sudo apt-get install typora -y
 
 # install Typora Themes
@@ -60,10 +57,11 @@ sudo apt-get install sublime-text -y
 # sudo snap install intellij-idea-ultimate --classic
 
 # remove redundant apps
-sudo apt remove kmahjongg kate kate5-data kcalc -y
-sudo apt remove konversation konversation-data skanlite  kwalletmanager -y
-sudo apt remove kmines kpat ksudoku -y
+sudo apt remove kmahjongg kate kate5-data kcalc konversation konversation-data skanlite  kwalletmanager kmines kpat ksudoku -y
+sudo apt remove neochat -y
 sudo apt update && sudo apt autoremove
+
+sudo snap remove thunderbird
 
 # Argcomplete provides easy, extensible command line tab completion of arguments for your Python script.
 # It makes two assumptions:
