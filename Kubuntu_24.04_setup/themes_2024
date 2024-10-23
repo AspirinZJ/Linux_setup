@@ -1,0 +1,9 @@
+全局主题：Breeze 微风深色
+	Plasma 视觉风格：GruvboxPlasma / Gruvbox plasma theme(search name)
+	窗口装饰元素：GruvboxAurorae/ Gruvbox aurorae(search name)
+	颜色：GruvboxColors / Gruvbox plasma colors(search name)
+	图标：ePapirus-Dark-yaru-folder / Papirus(search name)
+	光标：Qogir Recolored Catppuccin / https://www.pling.com/p/1818760(from this website to install, there is also one copy under resources/themes/cursor/Cap...), unzip and put the files under /usr/share/icons/ or ~/.icons/
+	欢迎屏幕：QuarksSplashDark
+开机与关机-登录屏幕：Sugar Dark / Sugar Dark for SDDM(search name)
+
