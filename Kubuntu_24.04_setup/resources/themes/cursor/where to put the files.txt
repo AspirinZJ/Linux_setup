@@ -1,0 +1,2 @@
+For user-specified icons:       ~/.local/share/icons
+For system icons:        /usr/share/icons
