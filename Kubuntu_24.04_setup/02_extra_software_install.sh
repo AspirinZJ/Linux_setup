@@ -61,4 +61,8 @@ tldr -u
 sudo apt install gpick -y
 
 # netstat: netstat -tunlp | grep <something>
-sudo apt install net-tools
+sudo apt install net-tools -y
+
+# iotop is a command line tool to monitor the io read/write with harddrives
+sudo apt install iotop -y
+
